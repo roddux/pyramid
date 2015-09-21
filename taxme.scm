@@ -1,0 +1,13 @@
+(define (taxme dolla per)
+  (display "For ")
+  (display dolla)
+  (display " dollars at ")
+  (display per)
+  (display "% tax, you owe ")
+  (display (* 100 (* (/ dolla 100) per)))
+  (display " cents\n")
+  )
+
+(taxme 100 25)
+(taxme 250 25)
+(taxme 18000 20)
