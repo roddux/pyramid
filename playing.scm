@@ -10,7 +10,7 @@
 
 (define (fib limit) 
   (define (fibr toN current next)
-    (if (eq? toN 0) ; if we've hit the limit
+    (if (eq? toN 0.0) ; if we've hit the limit
         (begin
           (display current) ; show final iteration
           (gr (/ next current)) ; display golden ratio approximation
@@ -23,9 +23,9 @@
     (display num)
     (display "\n")
     )
-  (fibr limit 0 1)
+  (fibr limit 0.0 1.0)
   )
 
 (inList? "a" '("c" "a" "r"))
 (inList? "x" '("c" "a" "r"))
-(fib 55)
+(fib 1475.0)
